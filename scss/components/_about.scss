@@ -1,0 +1,101 @@
+.main-about {
+    background-color: #394032;
+    font-family: 'Phudu', cursive;
+
+    h2 {
+        text-align: center;
+        font-size: 100px;
+        color: black;
+    }
+
+    .section-about-1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+        padding: 30px;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        div {
+            width: 50%;
+            text-align: center;
+            color: #000000;
+
+            h3 {}
+
+            p {}
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .section-about-2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+        padding: 30px;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        div {
+            width: 50%;
+            text-align: center;
+            color: #000000;
+
+            h3 {}
+
+            p {}
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .section-about-3 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+        padding: 30px;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        div {
+            width: 50%;
+            text-align: center;
+            color: #000000;
+
+            h3 {}
+
+            p {
+                a {
+                    text-decoration: none;
+                    color: wheat;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+}

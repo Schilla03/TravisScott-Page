@@ -1,0 +1,13 @@
+footer {
+    background-color: #1E2019;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 50px;
+
+    .logo {
+        width: 150px;
+        height: 100px;
+    }
+}
