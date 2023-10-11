@@ -1,13 +1,16 @@
 @media screen and (max-width:900px) {
+    .main-galery {
 
-    .grid-galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-    }
 
-    .grid-image {
-        grid-column: span 1;
-        grid-row: span 1;
+        .grid-galeria {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
+
+            .grid-image {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
     }
 
 
@@ -24,76 +27,102 @@
 
 
 @media screen and (max-width:650px) {
+    header {
 
-    .navbar-brand {
-        font-size: 40px;
+        nav {
+            .navbar-brand {
+                font-size: 40px;
+            }
+        }
     }
 
+
     /* section div div img{
-         max-width: auto;
-         height: auto;
-     } */
-
-
-
+             max-width: auto;
+             height: auto;
+         } */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:500px) {
 
-    footer div img {
-        height: 40px;
-        width: auto;
-    }
+    .main-galery {
+        h2 {
+            font-size: 30px;
+        }
 
-    footer img.logo {
-        height: 60px;
-        width: auto;
-    }
+        .grid-galeria {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: auto;
 
-    .grid-galeria {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: auto;
-    }
-
-    .grid-image {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-
-    .main-galery h2 {
-        font-size: 30px;
+            .grid-image {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
     }
 
 
 
+    footer {
+        div {
+            img {
+                height: 40px;
+                width: auto;
+            }
+        }
 
-
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+    }
 }
-
-
-
-
-
-
 
 @media screen and (max-width:400px) {
 
 
-    .navbar-brand {
-        font-size: 30px;
+
+    header {
+
+        nav {
+            .navbar-brand {
+                font-size: 30px;
+            }
+        }
     }
 
 
-    footer div img {
-        height: 30px;
-        width: auto;
+    footer {
+        div {
+            img {
+                height: 30px;
+                width: auto;
+            }
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+        }
     }
-
-    footer img.logo {
-        height: 50px;
-        width: auto;
-    }
-
-
-
 }
+
+
+
+
+
+

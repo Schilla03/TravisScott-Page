@@ -1,0 +1,21 @@
+header {
+    background-color: #1E2019;
+    position: sticky;
+
+    nav {
+        font-family: 'Phudu', cursive;
+
+        .navbar-brand {
+            font-size: 60px;
+            font-family: 'Phudu', cursive;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .nav-item {
+            &:hover {
+                font-size: 25px;
+            }
+        }
+    }
+}
