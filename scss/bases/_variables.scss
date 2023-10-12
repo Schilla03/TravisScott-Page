@@ -11,7 +11,10 @@ $colores:red,blue,white,orange,grey;
 $font-size:
 12px,
 18px,
-20px;
+20px,
+45px;
+
+$padding: 12px, 20px, 30px;
 
 // EJEMPLOS DE EJECUCION
 /* h1{
@@ -41,11 +44,12 @@ $ancho: 720px;
 
 //! MAPAS 
 
-$boton:(
-    fondo:black,
-    borde-boton: 2px solid tomato,
-    color-texto: white,
+$map-h2:(
+    //font-family: 'Phudu', cursive,
+    text-align: center,
+    color: black,
 );
+
 
 /* EJEMPLO DE MAPAS:
 
@@ -69,7 +73,38 @@ $boton:(
 .galeria{
     background-color: aqua,
     @extend %flex-center;     <-------- 
+}*/
+
+
+
+
+
+//! MIXING
+
+@mixin flex($flex, $justify-content,$align, $font-size, $padding){
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align;
+    font-size: $font-size;
+    padding: $padding;
 }
+@mixin contacto($background-color, $width,$height,$color,$display,$align,$flex-direction,$padding){
+    background-color: $background-color;
+    width: $width;
+    height: $height;
+    color: $color;
+    display: $display;
+    align-items: $align;
+    flex-direction: $flex-direction;
+    padding: $padding;
+}
+
+
+
+
+
+
+
 
 
 

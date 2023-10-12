@@ -4,9 +4,9 @@
     background-color: #394032;
     h2 {
         font-family: 'Phudu', cursive;
-        text-align: center;
-        font-size: 45px;
-        color: black;
+        text-align: map-get($map-h2, text-align);
+        font-size: nth($font-size, 4 );
+        color: map-get($map-h2, color );
     }
 
     .grid-galeria {
@@ -18,9 +18,7 @@
         gap: 15px;
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -33,9 +31,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -48,9 +44,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -63,9 +57,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -78,9 +70,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -93,9 +83,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -108,9 +96,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -123,9 +109,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
@@ -138,9 +122,7 @@
         }
 
         .grid-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
 
             img {
                 max-width: 100%;
