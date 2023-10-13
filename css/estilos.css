@@ -45,6 +45,10 @@ header {
     header nav .nav-item:hover {
       font-size: 25px; }
 
+section div div img {
+  height: 80vh;
+  max-width: 100%; }
+
 .main-about {
   background-color: #394032;
   font-family: 'Phudu', cursive; }
@@ -350,15 +354,167 @@ footer {
     grid-auto-rows: auto; }
     .main-galery .grid-galeria .grid-image {
       grid-column: span 1;
-      grid-row: span 1; } }
+      grid-row: span 1; }
+  .main-about h2 {
+    font-size: 50px; }
+  .main-about .section-about-1 {
+    font-size: 15px; }
+    .main-about .section-about-1 img {
+      width: 150px;
+      height: 150px; }
+  .main-about .section-about-2 {
+    font-size: 15px; }
+    .main-about .section-about-2 img {
+      width: 150px;
+      height: 150px; }
+  .main-about .section-about-3 {
+    font-size: 15px; }
+    .main-about .section-about-3 img {
+      width: 150px;
+      height: 150px; }
+  .main-musica h2 {
+    text-align: center;
+    font-family: 'Phudu', cursive;
+    font-size: 75px;
+    color: #000000; } }
 
 @media screen and (max-width: 650px) {
   header nav .navbar-brand {
     font-size: 40px; }
-  /* section div div img{
-             max-width: auto;
-             height: auto;
-         } */ }
+  .main-about h2 {
+    font-size: 20px; }
+  .main-about .section-about-1 {
+    font-size: 10px; }
+    .main-about .section-about-1 img {
+      width: 110px;
+      height: 110px; }
+  .main-about .section-about-2 {
+    font-size: 10px; }
+    .main-about .section-about-2 img {
+      width: 110px;
+      height: 110px; }
+  .main-about .section-about-3 {
+    font-size: 10px; }
+    .main-about .section-about-3 img {
+      width: 110px;
+      height: 110px; }
+  .main-tour {
+    background-color: #394032; }
+    .main-tour h2 {
+      font-family: 'Phudu', cursive;
+      font-size: 50px;
+      color: #000000;
+      text-align: center; }
+    .main-tour .section-tour-1 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 15px;
+      padding: 30px; }
+      .main-tour .section-tour-1 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-1 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-1 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-1 img {
+        height: 200px;
+        width: 200px; }
+    .main-tour .section-tour-2 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 15px;
+      padding: 30px; }
+      .main-tour .section-tour-2 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-2 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-2 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-2 img {
+        height: 200px;
+        width: 200px; }
+    .main-tour .section-tour-3 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 15px;
+      padding: 30px; }
+      .main-tour .section-tour-3 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-3 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-3 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-3 img {
+        height: 200px;
+        width: 200px; }
+    .main-tour .section-tour-4 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 15px;
+      padding: 30px; }
+      .main-tour .section-tour-4 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-4 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-4 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-4 img {
+        height: 200px;
+        width: 200px; }
+    .main-tour .section-tour-5 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 15px;
+      padding: 30px; }
+      .main-tour .section-tour-5 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-5 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-5 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-5 img {
+        height: 200px;
+        width: 200px; } }
 
 @media screen and (max-width: 500px) {
   .main-galery h2 {
@@ -369,6 +525,162 @@ footer {
     .main-galery .grid-galeria .grid-image {
       grid-column: span 1;
       grid-row: span 1; }
+  .main-about h2 {
+    font-size: 25px; }
+  .main-about .section-about-1 {
+    font-size: 9px; }
+    .main-about .section-about-1 img {
+      width: 95px;
+      height: 95px; }
+  .main-about .section-about-2 {
+    font-size: 9px; }
+    .main-about .section-about-2 img {
+      width: 95px;
+      height: 95px; }
+  .main-about .section-about-3 {
+    font-size: 9px; }
+    .main-about .section-about-3 img {
+      width: 95px;
+      height: 95px; }
+  .main-about h2 {
+    font-size: 20px; }
+  .main-about .section-about-1 {
+    font-size: 10px; }
+    .main-about .section-about-1 img {
+      width: 110px;
+      height: 110px; }
+  .main-about .section-about-2 {
+    font-size: 10px; }
+    .main-about .section-about-2 img {
+      width: 110px;
+      height: 110px; }
+  .main-about .section-about-3 {
+    font-size: 10px; }
+    .main-about .section-about-3 img {
+      width: 110px;
+      height: 110px; }
+  .main-tour {
+    background-color: #394032; }
+    .main-tour h2 {
+      font-family: 'Phudu', cursive;
+      font-size: 35px;
+      color: #000000;
+      text-align: center; }
+    .main-tour .section-tour-1 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 10px;
+      padding: 30px; }
+      .main-tour .section-tour-1 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-1 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-1 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-1 img {
+        height: 150px;
+        width: 150px; }
+    .main-tour .section-tour-2 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 10px;
+      padding: 30px; }
+      .main-tour .section-tour-2 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-2 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-2 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-2 img {
+        height: 150px;
+        width: 150px; }
+    .main-tour .section-tour-3 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 10px;
+      padding: 30px; }
+      .main-tour .section-tour-3 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-3 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-3 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-3 img {
+        height: 150px;
+        width: 150px; }
+    .main-tour .section-tour-4 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 10px;
+      padding: 30px; }
+      .main-tour .section-tour-4 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-4 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-4 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-4 img {
+        height: 150px;
+        width: 150px; }
+    .main-tour .section-tour-5 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 10px;
+      padding: 30px; }
+      .main-tour .section-tour-5 div {
+        width: 50%;
+        text-align: center;
+        color: #1E2019; }
+        .main-tour .section-tour-5 div p {
+          font-family: 'Phudu', cursive;
+          color: #000000; }
+        .main-tour .section-tour-5 div a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          border: solid 5px;
+          padding: 10px; }
+      .main-tour .section-tour-5 img {
+        height: 150px;
+        width: 150px; }
+  .main-musica h2 {
+    text-align: center;
+    font-family: 'Phudu', cursive;
+    font-size: 50px;
+    color: #000000; }
   footer div img {
     height: 40px;
     width: auto; }
@@ -379,6 +691,11 @@ footer {
 @media screen and (max-width: 400px) {
   header nav .navbar-brand {
     font-size: 30px; }
+  .main-musica h2 {
+    text-align: center;
+    font-family: 'Phudu', cursive;
+    font-size: 35px;
+    color: #000000; }
   footer div img {
     height: 30px;
     width: auto; }
