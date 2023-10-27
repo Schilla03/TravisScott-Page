@@ -2,17 +2,17 @@
 //Son la manera como los programadores le dan un nombre a un valor para poder reusarlo, actualizardo o simplemente registrarlo.
 //Son reservados en la memoria para almacenar datos (nos sirven para guardar informacion).
 $color-principal: yellow;
-$color-principal:white;
-$color-principal:#0000ff;
+$color-principal: white;
+$color-principal: #0000ff;
 
 
 // LISTAS
-$colores:red,blue,white,orange,grey;
-$font-size:
-12px,
-18px,
-20px,
-45px;
+$colores: red, blue, white, orange, grey;
+$font-size: 12px,
+    18px,
+    20px,
+    45px,
+    70px;
 
 $padding: 12px, 20px, 30px;
 
@@ -44,7 +44,7 @@ $ancho: 720px;
 
 //! MAPAS 
 
-$map-h2:(
+$map-h2: (
     //font-family: 'Phudu', cursive,
     text-align: center,
     color: black,
@@ -62,7 +62,7 @@ $map-h2:(
 //! EXTENDS
 // % placeholder
 
-%flex-center{
+%flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,14 +81,15 @@ $map-h2:(
 
 //! MIXING
 
-@mixin flex($flex, $justify-content,$align, $font-size, $padding){
+@mixin flex($flex, $justify-content, $align, $font-size, $padding) {
     display: $flex;
     justify-content: $justify-content;
     align-items: $align;
     font-size: $font-size;
     padding: $padding;
 }
-@mixin contacto($background-color, $width,$height,$color,$display,$align,$flex-direction,$padding){
+
+@mixin contacto($background-color, $width, $height, $color, $display, $align, $flex-direction, $padding) {
     background-color: $background-color;
     width: $width;
     height: $height;
@@ -98,14 +99,3 @@ $map-h2:(
     flex-direction: $flex-direction;
     padding: $padding;
 }
-
-
-
-
-
-
-
-
-
-
-

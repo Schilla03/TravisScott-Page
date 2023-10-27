@@ -46,15 +46,16 @@ header {
       font-size: 25px; }
 
 section div div img {
-  height: 80vh;
-  max-width: 100%; }
+  object-fit: cover;
+  width: 1200px;
+  height: 800px; }
 
 .main-about {
   background-color: #394032;
   font-family: 'Phudu', cursive; }
   .main-about h2 {
     text-align: center;
-    font-size: 100px;
+    font-size: 70px;
     color: black; }
   .main-about .section-about-1 {
     display: flex;
@@ -116,7 +117,7 @@ section div div img {
   .main-galery h2 {
     font-family: 'Phudu', cursive;
     text-align: center;
-    font-size: 45px;
+    font-size: 70px;
     color: black; }
   .main-galery .grid-galeria {
     width: 100%;
@@ -216,7 +217,7 @@ section div div img {
         --bs-btn-hover-color: #fff;
         --bs-btn-hover-bg: #303030;
         --bs-btn-hover-border-color: #000000;
-        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
         --bs-btn-active-color: #fff;
         --bs-btn-active-bg: #000000;
         --bs-btn-active-border-color: #252525;
@@ -247,7 +248,7 @@ section div div img {
         --bs-btn-hover-color: #fff;
         --bs-btn-hover-bg: #303030;
         --bs-btn-hover-border-color: #000000;
-        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
         --bs-btn-active-color: #fff;
         --bs-btn-active-bg: #000000;
         --bs-btn-active-border-color: #252525;
@@ -278,7 +279,7 @@ section div div img {
         --bs-btn-hover-color: #fff;
         --bs-btn-hover-bg: #303030;
         --bs-btn-hover-border-color: #000000;
-        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
         --bs-btn-active-color: #fff;
         --bs-btn-active-bg: #000000;
         --bs-btn-active-border-color: #252525;
@@ -309,7 +310,7 @@ section div div img {
         --bs-btn-hover-color: #fff;
         --bs-btn-hover-bg: #303030;
         --bs-btn-hover-border-color: #000000;
-        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
         --bs-btn-active-color: #fff;
         --bs-btn-active-bg: #000000;
         --bs-btn-active-border-color: #252525;
@@ -340,7 +341,7 @@ section div div img {
         --bs-btn-hover-color: #fff;
         --bs-btn-hover-bg: #303030;
         --bs-btn-hover-border-color: #000000;
-        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
         --bs-btn-active-color: #fff;
         --bs-btn-active-bg: #000000;
         --bs-btn-active-border-color: #252525;
@@ -357,20 +358,29 @@ section div div img {
   .main-musica h2 {
     text-align: center;
     font-family: 'Phudu', cursive;
-    font-size: 100px;
+    font-size: 70px;
     color: #000000; }
-  .main-musica section h3 {
-    font-family: 'Phudu', cursive;
-    margin: 20px;
-    color: beige; }
-  .main-musica section h3 {
-    font-family: 'Phudu', cursive;
-    margin: 20px;
-    color: beige; }
-  .main-musica section h3 {
-    font-family: 'Phudu', cursive;
-    margin: 20px;
-    color: beige; }
+  .main-musica .music-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center; }
+    .main-musica .music-container .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-musica .music-container .section h3 {
+        font-family: 'Phudu', cursive;
+        margin: 20px;
+        color: beige; }
+      .main-musica .music-container .section .iframe-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .main-musica .music-container .section .iframe-container iframe {
+          border-radius: 12px;
+          width: 100%;
+          max-width: 400px; }
 
 .main-contacto {
   background-color: #394032;
@@ -394,6 +404,9 @@ footer {
     height: 100px; }
 
 @media screen and (max-width: 900px) {
+  section div div img {
+    width: auto;
+    height: auto; }
   .main-galery .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto; }
@@ -427,7 +440,7 @@ footer {
   header nav .navbar-brand {
     font-size: 40px; }
   .main-about h2 {
-    font-size: 20px; }
+    font-size: 25px; }
   .main-about .section-about-1 {
     font-size: 10px; }
     .main-about .section-about-1 img {
@@ -559,9 +572,41 @@ footer {
           padding: 10px; }
       .main-tour .section-tour-5 img {
         height: 200px;
-        width: 200px; } }
+        width: 200px; }
+  .main-musica {
+    background-color: #394032; }
+    .main-musica h2 {
+      text-align: center;
+      font-family: 'Phudu', cursive;
+      font-size: 25px;
+      color: #000000; }
+    .main-musica .music-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center; }
+      .main-musica .music-container .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .main-musica .music-container .section h3 {
+          font-size: 25px;
+          font-family: 'Phudu', cursive;
+          margin: 20px;
+          color: beige; }
+        .main-musica .music-container .section .iframe-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .main-musica .music-container .section .iframe-container iframe {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px; } }
 
 @media screen and (max-width: 500px) {
+  section div div img {
+    width: 100%;
+    height: auto; }
   .main-galery h2 {
     font-size: 30px; }
   .main-galery .grid-galeria {
@@ -571,39 +616,22 @@ footer {
       grid-column: span 1;
       grid-row: span 1; }
   .main-about h2 {
-    font-size: 25px; }
-  .main-about .section-about-1 {
-    font-size: 9px; }
-    .main-about .section-about-1 img {
-      width: 95px;
-      height: 95px; }
-  .main-about .section-about-2 {
-    font-size: 9px; }
-    .main-about .section-about-2 img {
-      width: 95px;
-      height: 95px; }
-  .main-about .section-about-3 {
-    font-size: 9px; }
-    .main-about .section-about-3 img {
-      width: 95px;
-      height: 95px; }
-  .main-about h2 {
     font-size: 20px; }
   .main-about .section-about-1 {
-    font-size: 10px; }
+    font-size: 9px; }
     .main-about .section-about-1 img {
-      width: 110px;
-      height: 110px; }
+      width: 95px;
+      height: 95px; }
   .main-about .section-about-2 {
-    font-size: 10px; }
+    font-size: 9px; }
     .main-about .section-about-2 img {
-      width: 110px;
-      height: 110px; }
+      width: 95px;
+      height: 95px; }
   .main-about .section-about-3 {
-    font-size: 10px; }
+    font-size: 9px; }
     .main-about .section-about-3 img {
-      width: 110px;
-      height: 110px; }
+      width: 95px;
+      height: 95px; }
   .main-tour {
     background-color: #394032; }
     .main-tour h2 {
@@ -615,7 +643,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      font-size: 10px;
+      font-size: 15px;
       padding: 30px; }
       .main-tour .section-tour-1 div {
         width: 50%;
@@ -624,12 +652,11 @@ footer {
         .main-tour .section-tour-1 div p {
           font-family: 'Phudu', cursive;
           color: #000000; }
-        .main-tour .section-tour-1 div a {
-          text-decoration: none;
-          color: black;
-          font-weight: bold;
-          border: solid 5px;
-          padding: 10px; }
+        .main-tour .section-tour-1 div .btn-lg {
+          --bs-btn-padding-y: 0.5rem;
+          --bs-btn-padding-x: 1rem;
+          --bs-btn-font-size: 10px;
+          --bs-btn-border-radius: var(--bs-border-radius-lg); }
       .main-tour .section-tour-1 img {
         height: 150px;
         width: 150px; }
@@ -637,7 +664,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      font-size: 10px;
+      font-size: 15px;
       padding: 30px; }
       .main-tour .section-tour-2 div {
         width: 50%;
@@ -646,12 +673,11 @@ footer {
         .main-tour .section-tour-2 div p {
           font-family: 'Phudu', cursive;
           color: #000000; }
-        .main-tour .section-tour-2 div a {
-          text-decoration: none;
-          color: black;
-          font-weight: bold;
-          border: solid 5px;
-          padding: 10px; }
+        .main-tour .section-tour-2 div .btn-lg {
+          --bs-btn-padding-y: 0.5rem;
+          --bs-btn-padding-x: 1rem;
+          --bs-btn-font-size: 10px;
+          --bs-btn-border-radius: var(--bs-border-radius-lg); }
       .main-tour .section-tour-2 img {
         height: 150px;
         width: 150px; }
@@ -659,7 +685,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      font-size: 10px;
+      font-size: 15px;
       padding: 30px; }
       .main-tour .section-tour-3 div {
         width: 50%;
@@ -668,12 +694,11 @@ footer {
         .main-tour .section-tour-3 div p {
           font-family: 'Phudu', cursive;
           color: #000000; }
-        .main-tour .section-tour-3 div a {
-          text-decoration: none;
-          color: black;
-          font-weight: bold;
-          border: solid 5px;
-          padding: 10px; }
+        .main-tour .section-tour-3 div .btn-lg {
+          --bs-btn-padding-y: 0.5rem;
+          --bs-btn-padding-x: 1rem;
+          --bs-btn-font-size: 10px;
+          --bs-btn-border-radius: var(--bs-border-radius-lg); }
       .main-tour .section-tour-3 img {
         height: 150px;
         width: 150px; }
@@ -681,7 +706,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      font-size: 10px;
+      font-size: 15px;
       padding: 30px; }
       .main-tour .section-tour-4 div {
         width: 50%;
@@ -690,12 +715,11 @@ footer {
         .main-tour .section-tour-4 div p {
           font-family: 'Phudu', cursive;
           color: #000000; }
-        .main-tour .section-tour-4 div a {
-          text-decoration: none;
-          color: black;
-          font-weight: bold;
-          border: solid 5px;
-          padding: 10px; }
+        .main-tour .section-tour-4 div .btn-lg {
+          --bs-btn-padding-y: 0.5rem;
+          --bs-btn-padding-x: 1rem;
+          --bs-btn-font-size: 10px;
+          --bs-btn-border-radius: var(--bs-border-radius-lg); }
       .main-tour .section-tour-4 img {
         height: 150px;
         width: 150px; }
@@ -703,7 +727,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      font-size: 10px;
+      font-size: 15px;
       padding: 30px; }
       .main-tour .section-tour-5 div {
         width: 50%;
@@ -712,12 +736,11 @@ footer {
         .main-tour .section-tour-5 div p {
           font-family: 'Phudu', cursive;
           color: #000000; }
-        .main-tour .section-tour-5 div a {
-          text-decoration: none;
-          color: black;
-          font-weight: bold;
-          border: solid 5px;
-          padding: 10px; }
+        .main-tour .section-tour-5 div .btn-lg {
+          --bs-btn-padding-y: 0.5rem;
+          --bs-btn-padding-x: 1rem;
+          --bs-btn-font-size: 10px;
+          --bs-btn-border-radius: var(--bs-border-radius-lg); }
       .main-tour .section-tour-5 img {
         height: 150px;
         width: 150px; }
@@ -726,6 +749,35 @@ footer {
     font-family: 'Phudu', cursive;
     font-size: 50px;
     color: #000000; }
+  .main-musica {
+    background-color: #394032; }
+    .main-musica h2 {
+      text-align: center;
+      font-family: 'Phudu', cursive;
+      font-size: 20px;
+      color: #000000; }
+    .main-musica .music-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      justify-items: center; }
+      .main-musica .music-container .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .main-musica .music-container .section h3 {
+          font-size: 20px;
+          font-family: 'Phudu', cursive;
+          margin: 20px;
+          color: beige; }
+        .main-musica .music-container .section .iframe-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .main-musica .music-container .section .iframe-container iframe {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 300px; }
   footer div img {
     height: 40px;
     width: auto; }
@@ -734,6 +786,9 @@ footer {
     width: auto; } }
 
 @media screen and (max-width: 400px) {
+  section div div img {
+    width: 100%;
+    height: auto; }
   header nav .navbar-brand {
     font-size: 30px; }
   .main-musica h2 {

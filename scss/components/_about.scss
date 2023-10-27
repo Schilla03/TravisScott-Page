@@ -4,7 +4,7 @@
 
     h2 {
         text-align: center;
-        font-size: 100px;
+        font-size: 70px;
         color: black;
     }
 
@@ -12,8 +12,8 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        font-size: nth($font-size, 3 );
-        padding: nth($padding , 3 );
+        font-size: nth($font-size, 3);
+        padding: nth($padding , 3);
 
         img {
             width: 250px;
@@ -25,7 +25,7 @@
             text-align: center;
             color: #000000;
 
-           
+
         }
 
         img {
@@ -51,7 +51,7 @@
             text-align: center;
             color: #000000;
 
-            
+
         }
 
         img {
@@ -77,7 +77,7 @@
             text-align: center;
             color: #000000;
 
-            
+
 
             p {
                 a {
