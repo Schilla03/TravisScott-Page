@@ -1,32 +1,9 @@
-/* h1{
-    font-size: nth($font-size, 3);   <--- El numero indica que opcion 
-    
-                                        quiero utilizar, en este caso la numero 3, 20px.
-    
-    color: nth($colores, 4);
-}*/
-/* img{
-    width: $ancho - 200px / 2;
-}*/
-/* EJEMPLO DE MAPAS:
-
-.boton{
-    background-color: map-get($boton, fondo); <---- primero llamamos al mapa y luego la key que queremos utilizar.
-    border: map-get($boton, borde-boton);
-}*/
 @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700&display=swap");
 .main-galery .grid-galeria .grid-image {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/* EJEMPLO DE EXTENDS
-
-.galeria{
-    background-color: aqua,
-    @extend %flex-center;     <-------- 
-}*/
-/*------------RESET------------*/
 * {
   margin: 0;
   padding: 0;
@@ -45,10 +22,8 @@ header {
     header nav .nav-item:hover {
       font-size: 25px; }
 
-section div div img {
-  object-fit: cover;
-  width: 1200px;
-  height: 800px; }
+.carrusel-index .slide img {
+  height: 80vh; }
 
 .main-about {
   background-color: #394032;
@@ -405,8 +380,8 @@ footer {
 
 @media screen and (max-width: 900px) {
   section div div img {
-    width: auto;
-    height: auto; }
+    width: 800px;
+    height: 800px; }
   .main-galery .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto; }
@@ -604,9 +579,6 @@ footer {
             max-width: 400px; } }
 
 @media screen and (max-width: 500px) {
-  section div div img {
-    width: 100%;
-    height: auto; }
   .main-galery h2 {
     font-size: 30px; }
   .main-galery .grid-galeria {
@@ -786,9 +758,6 @@ footer {
     width: auto; } }
 
 @media screen and (max-width: 400px) {
-  section div div img {
-    width: 100%;
-    height: auto; }
   header nav .navbar-brand {
     font-size: 30px; }
   .main-musica h2 {

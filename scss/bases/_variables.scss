@@ -1,12 +1,10 @@
-// VARIABLES
-//Son la manera como los programadores le dan un nombre a un valor para poder reusarlo, actualizardo o simplemente registrarlo.
-//Son reservados en la memoria para almacenar datos (nos sirven para guardar informacion).
+
 $color-principal: yellow;
 $color-principal: white;
 $color-principal: #0000ff;
 
 
-// LISTAS
+
 $colores: red, blue, white, orange, grey;
 $font-size: 12px,
     18px,
@@ -16,70 +14,21 @@ $font-size: 12px,
 
 $padding: 12px, 20px, 30px;
 
-// EJEMPLOS DE EJECUCION
-/* h1{
-    font-size: nth($font-size, 3);   <--- El numero indica que opcion 
-    
-                                        quiero utilizar, en este caso la numero 3, 20px.
-    
-    color: nth($colores, 4);
-}*/
-
-
-
-
-
-//! OPERACIONES 
-// OPERADORES ARITMETICOS: + - * / 
-
 $ancho: 720px;
 
-/* img{
-    width: $ancho - 200px / 2;
-}*/
-
-
-// "calc(100vh - 120px)"    <------   sirve para hacer calculos.
-
-
-//! MAPAS 
+ 
 
 $map-h2: (
-    //font-family: 'Phudu', cursive,
     text-align: center,
     color: black,
 );
 
-
-/* EJEMPLO DE MAPAS:
-
-.boton{
-    background-color: map-get($boton, fondo); <---- primero llamamos al mapa y luego la key que queremos utilizar.
-    border: map-get($boton, borde-boton);
-}*/
-
-
-//! EXTENDS
-// % placeholder
 
 %flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* EJEMPLO DE EXTENDS
-
-.galeria{
-    background-color: aqua,
-    @extend %flex-center;     <-------- 
-}*/
-
-
-
-
-
-//! MIXING
 
 @mixin flex($flex, $justify-content, $align, $font-size, $padding) {
     display: $flex;
